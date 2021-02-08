@@ -30,21 +30,21 @@ First of all, you need make the ExcelDnaPack tool available to your Cake build p
 #tool "nuget:?package=ExcelDnaPack&version=1.1.1"
 ```
 
-_Make sure the `&version=` attribute references the [latest version of ExcelDnaPack available on nuget.org](https://www.nuget.org/packages/ExcelDnaPack/)_.
+_Make sure the `&version=` attribute references the [latest version of ExcelDnaPack](https://www.nuget.org/packages/ExcelDnaPack/) available on [nuget.org](https://www.nuget.org)_.
 
 Then, you need to load Cake.ExcelDnaPack in your build script by using the [`addin`](http://cakebuild.net/docs/writing-builds/preprocessor-directives#add-in-directive) directive:
 
 ```csharp
-#addin "nuget:?package=Cake.ExcelDnaPack&version=0.1.0"
+#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"
 ```
 
-_Make sure the `&version=` attribute references the [latest version of Cake.ExcelDnaPack available on nuget.org](https://www.nuget.org/packages/Cake.ExcelDnaPack/)_.
+_Make sure the `&version=` attribute references the [latest version of Cake.ExcelDnaPack](https://www.nuget.org/packages/Cake.ExcelDnaPack/) compatible with the Cake runner that you are using. Check the [compatibility table](#compatibility) to see which version of Cake.ExcelDnaPack to choose__.
 
 Finally, call `ExcelDnaPack()` in order to pack all the files that compose your Excel-DNA addin into a single file:
 
 ```csharp
 #tool "nuget:?package=ExcelDnaPack&version=1.1.1"
-#addin "nuget:?package=Cake.ExcelDnaPack&version=0.1.0"
+#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"
 
 Task("Example")
     .Does(context =>
@@ -98,6 +98,16 @@ ExcelDnaPack(@"C:\MyProject\MyAddin.dna", settings => settings
     .SetOutputXllFilePath(@"C:\MyProject\MyAddin-SingleFile.xll")
 );
 ```
+
+## Compatibility
+
+Cake.ExcelDnaPack is compatible with all [Cake runners](https://cakebuild.net/docs/running-builds/runners/), and below you can find which version of Cake.ExcelDnaPack you should use based on the version of the Cake runner you're using.
+
+| Cake runner     | Cake.ExcelDnaPack | Cake addin directive                                      |
+|:---------------:|:-----------------:| --------------------------------------------------------- |
+| 1.0.0 or higher | 1.0.0 or higher   | `#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"` |
+| 0.33.0 - 0.38.5 | 0.1.0             | `#addin "nuget:?package=Cake.ExcelDnaPack&version=0.1.0"` |
+| < 0.33.0        | _N/A_             | _(not supported)_                                         |
 
 ## Discussion
 
