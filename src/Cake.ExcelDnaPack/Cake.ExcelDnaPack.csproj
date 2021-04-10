@@ -23,17 +23,16 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <MinClientVersion>4.0.0</MinClientVersion>
     <PackageId>Cake.ExcelDnaPack</PackageId>
     <Version>0.0.1-local</Version>
     <Authors>C. Augusto Proiete &amp; Contributors</Authors>
     <Company>augustoproiete.net</Company>
     <Description>Cake add-in that makes ExcelDnaPack available as a tool in Cake.</Description>
     <Copyright>Copyright 2021 C. Augusto Proiete &amp; Contributors - Provided under the MIT License</Copyright>
-    <PackageTags>cake;exceldnapack;exceldna;addin;cake-addin;cake-build;addin;script;build;augustoproiete</PackageTags>
+    <PackageTags>cake;exceldnapack;exceldna;excel-dna;addin;cake-addin;cake-build;addin;script;build;augustoproiete;augusto-proiete</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete/Cake.ExcelDnaPack/master/assets/cake-exceldnapack-nuget.png</PackageIconUrl>
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/addin/cake-contrib-addin-medium.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/augustoproiete/Cake.ExcelDnaPack</PackageProjectUrl>
     <PackageReleaseNotes>https://github.com/augustoproiete/Cake.ExcelDnaPack/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
