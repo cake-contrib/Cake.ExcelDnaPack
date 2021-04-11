@@ -11,9 +11,7 @@ on:
       - "*.*.*"
     paths-ignore:
       - "README.md"
-
   pull_request:
-
   workflow_dispatch:
 
 env:
