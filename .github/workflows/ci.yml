@@ -6,6 +6,7 @@ on:
       - "feature/**"
       - "release/**"
       - "hotfix/**"
+      - "dependabot/**"
     tags:
       - "*.*.*"
     paths-ignore:
