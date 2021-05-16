@@ -35,7 +35,7 @@ _Make sure the `&version=` attribute references the [latest version of ExcelDnaP
 Then, you need to load Cake.ExcelDnaPack in your build script by using the [`addin`](http://cakebuild.net/docs/writing-builds/preprocessor-directives#add-in-directive) directive:
 
 ```csharp
-#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"
+#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.1"
 ```
 
 _Make sure the `&version=` attribute references the [latest version of Cake.ExcelDnaPack](https://www.nuget.org/packages/Cake.ExcelDnaPack/) compatible with the Cake runner that you are using. Check the [compatibility table](#compatibility) to see which version of Cake.ExcelDnaPack to choose__.
@@ -44,7 +44,7 @@ Finally, call `ExcelDnaPack()` in order to pack all the files that compose your 
 
 ```csharp
 #tool "nuget:?package=ExcelDnaPack&version=1.1.1"
-#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"
+#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.1"
 
 Task("Example")
     .Does(context =>
@@ -105,7 +105,7 @@ Cake.ExcelDnaPack is compatible with all [Cake runners](https://cakebuild.net/do
 
 | Cake runner     | Cake.ExcelDnaPack | Cake addin directive                                      |
 |:---------------:|:-----------------:| --------------------------------------------------------- |
-| 1.0.0 or higher | 1.0.0 or higher   | `#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.0"` |
+| 1.0.0 or higher | 1.0.0 or higher   | `#addin "nuget:?package=Cake.ExcelDnaPack&version=1.0.1"` |
 | 0.33.0 - 0.38.5 | 0.1.0             | `#addin "nuget:?package=Cake.ExcelDnaPack&version=0.1.0"` |
 | < 0.33.0        | _N/A_             | _(not supported)_                                         |
 
@@ -117,7 +117,7 @@ For questions and to discuss ideas & feature requests, use the [GitHub discussio
 
 ## Release History
 
-Click on the [Releases](https://github.com/augustoproiete/Cake.ExcelDnaPack/releases) tab on GitHub.
+Click on the [Releases](https://github.com/cake-contrib/Cake.ExcelDnaPack/releases) tab on GitHub.
 
 ---
 
