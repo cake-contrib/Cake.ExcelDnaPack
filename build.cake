@@ -60,7 +60,7 @@ Task("pack")
     .IsDependentOn("test")
     .Does(() =>
 {
-    var releaseNotes = $"https://github.com/augustoproiete/Cake.ExcelDnaPack/releases/tag/v{buildVersion.Version}";
+    var releaseNotes = $"https://github.com/cake-contrib/Cake.ExcelDnaPack/releases/tag/v{buildVersion.Version}";
 
     DotNetCorePack("./src/Cake.ExcelDnaPack/Cake.ExcelDnaPack.csproj", new DotNetCorePackSettings
     {
