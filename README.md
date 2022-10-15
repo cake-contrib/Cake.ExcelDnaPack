@@ -27,7 +27,7 @@ This addin exposes the functionality of [ExcelDnaPack](https://github.com/august
 First of all, you need make the ExcelDnaPack tool available to your Cake build process by using the [`tool`](http://cakebuild.net/docs/writing-builds/preprocessor-directives#tool-directive) directive:
 
 ```csharp
-#tool "nuget:?package=ExcelDnaPack&version=1.5.0"
+#tool "nuget:?package=ExcelDnaPack&version=1.5.1"
 ```
 
 _Make sure the `&version=` attribute references the [latest version of ExcelDnaPack](https://www.nuget.org/packages/ExcelDnaPack/) available on [nuget.org](https://www.nuget.org)_.
@@ -43,7 +43,7 @@ _Make sure the `&version=` attribute references the [latest version of Cake.Exce
 Finally, call `ExcelDnaPack()` in order to pack all the files that compose your Excel-DNA addin into a single file:
 
 ```csharp
-#tool "nuget:?package=ExcelDnaPack&version=1.5.0"
+#tool "nuget:?package=ExcelDnaPack&version=1.5.1"
 #addin "nuget:?package=Cake.ExcelDnaPack&version=2.0.0"
 
 Task("Example")
@@ -122,4 +122,4 @@ Click on the [Releases](https://github.com/cake-contrib/Cake.ExcelDnaPack/releas
 
 ---
 
-_Copyright &copy; 2021 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._
+_Copyright &copy; 2022 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._
