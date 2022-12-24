@@ -1,0 +1,45 @@
+﻿namespace Cake.ExcelDnaPack
+{
+    [Cake.Core.Annotations.CakeAliasCategory("ExcelDnaPack")]
+    [Cake.Core.Annotations.CakeNamespaceImport("Cake.ExcelDnaPack")]
+    public static class ExcelDnaPackAliases
+    {
+        [Cake.Core.Annotations.CakeAliasCategory("ExcelDnaPack")]
+        [Cake.Core.Annotations.CakeMethodAlias]
+        public static void ExcelDnaPack(this Cake.Core.ICakeContext context, Cake.Core.IO.FilePath dnaFilePath) { }
+        [Cake.Core.Annotations.CakeAliasCategory("ExcelDnaPack")]
+        [Cake.Core.Annotations.CakeMethodAlias]
+        public static void ExcelDnaPack(this Cake.Core.ICakeContext context, Cake.ExcelDnaPack.ExcelDnaPackSettings settings) { }
+        [Cake.Core.Annotations.CakeAliasCategory("ExcelDnaPack")]
+        [Cake.Core.Annotations.CakeMethodAlias]
+        public static void ExcelDnaPack(this Cake.Core.ICakeContext context, System.Action<Cake.ExcelDnaPack.ExcelDnaPackSettings> configurator) { }
+        [Cake.Core.Annotations.CakeAliasCategory("ExcelDnaPack")]
+        [Cake.Core.Annotations.CakeMethodAlias]
+        public static void ExcelDnaPack(this Cake.Core.ICakeContext context, Cake.Core.IO.FilePath dnaFilePath, System.Action<Cake.ExcelDnaPack.ExcelDnaPackSettings> configurator) { }
+    }
+    public class ExcelDnaPackSettings : Cake.Core.Tooling.ToolSettings
+    {
+        public ExcelDnaPackSettings() { }
+        public Cake.Core.IO.FilePath DnaFilePath { get; set; }
+        public bool? NoCompression { get; set; }
+        public bool? NoMultiThreading { get; set; }
+        public Cake.Core.IO.FilePath OutputXllFilePath { get; set; }
+        public bool? PromptBeforeOverwrite { get; set; }
+    }
+    public static class ExcelDnaPackSettingsExtensions
+    {
+        public static Cake.ExcelDnaPack.ExcelDnaPackSettings NoCompression(this Cake.ExcelDnaPack.ExcelDnaPackSettings settings) { }
+        public static Cake.ExcelDnaPack.ExcelDnaPackSettings NoMultiThreading(this Cake.ExcelDnaPack.ExcelDnaPackSettings settings) { }
+        public static Cake.ExcelDnaPack.ExcelDnaPackSettings PromptBeforeOverwrite(this Cake.ExcelDnaPack.ExcelDnaPackSettings settings) { }
+        public static Cake.ExcelDnaPack.ExcelDnaPackSettings SetDnaFilePath(this Cake.ExcelDnaPack.ExcelDnaPackSettings settings, Cake.Core.IO.FilePath dnaFilePath) { }
+        public static Cake.ExcelDnaPack.ExcelDnaPackSettings SetOutputXllFilePath(this Cake.ExcelDnaPack.ExcelDnaPackSettings settings, Cake.Core.IO.FilePath outputXllFilePath) { }
+    }
+    public class ExcelDnaPackTool : Cake.Core.Tooling.Tool<Cake.ExcelDnaPack.ExcelDnaPackSettings>
+    {
+        public ExcelDnaPackTool(Cake.Core.IO.IFileSystem fileSystem, Cake.Core.ICakeEnvironment environment, Cake.Core.IO.IProcessRunner processRunner, Cake.Core.Tooling.IToolLocator tools, Cake.Core.Diagnostics.ICakeLog log) { }
+        public Cake.Core.Diagnostics.ICakeLog CakeLog { get; }
+        protected override System.Collections.Generic.IEnumerable<string> GetToolExecutableNames() { }
+        protected override string GetToolName() { }
+        public void Run(Cake.ExcelDnaPack.ExcelDnaPackSettings settings) { }
+    }
+}
