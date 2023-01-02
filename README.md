@@ -123,4 +123,4 @@ Click on the [Releases](https://github.com/cake-contrib/Cake.ExcelDnaPack/releas
 
 ---
 
-_Copyright &copy; 2021-2022 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._
+_Copyright &copy; 2021-2023 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._
